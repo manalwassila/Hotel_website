@@ -1,44 +1,87 @@
+# Hotel Management System
 
-# Hotel Website
+A full‑stack web application to manage hotel operations — room reservations, client management, and administrative control.
 
-Project: a small hotel booking website written in PHP with a MySQL backend.
+## Overview
+
+This project provides a complete solution for hotel workflows: searching availability, making bookings, and managing clients and reservations from an admin dashboard. It separates client-facing pages and administrative functionality for a secure and streamlined experience.
 
 ## Features
-- Room listing and gallery
-- Booking form and backend handling
-- Admin panel for bookings and messages (`admin/`)
-- Simple PHP + MySQL architecture (no frameworks)
 
-## Requirements
-- PHP 7.4 or newer
-- MySQL / MariaDB
-- Web server (Apache, Nginx, or PHP built-in server)
+Client
+- Browse available rooms
+- Make reservations with real-time availability checks
+- Contact the hotel via a built-in form
+
+Admin
+- Manage reservations (create, update, delete)
+- Manage clients and accounts
+- Monitor booking activity and history
+- Secure authentication and role separation
+
+## Tech Stack
+
+- Frontend: HTML5, CSS3, JavaScript
+- Backend: PHP
+- Database: MySQL / MariaDB
+
+## Highlights
+
+- Real-time availability validation before confirming bookings
+- Normalized database with relationships (Client ↔ Booking)
+- Separate authentication flows for admins and regular users
+- Clean, responsive UI with a functional design
+
+## Screenshots
+
+Add screenshots to the `screenshots/` folder and reference them here. Example:
+
+![Homepage](screenshots/homepage.png)
+![Booking page](screenshots/booking.png)
+![Admin dashboard](screenshots/admin.png)
 
 ## Installation
-1. Clone or copy this repository to your webserver root (e.g., `htdocs`, `www`).
-2. Import the database: `hotel_db.sql` into your MySQL server.
-	- Example: `mysql -u root -p hotel_db < hotel_db.sql`
-3. Edit database credentials in `components/connect.php` to match your DB.
-4. Ensure the `media/` and `css/` folders are readable by the server.
 
-## Run locally (quick test)
-From the project root you can start PHP's built-in server for a quick smoke test:
+1. Clone the repository:
+
 ```bash
-php -S localhost:8000 -t .
+git clone https://github.com/manalwassila/Hotel_website.git
 ```
-Then open `http://localhost:8000` in your browser.
 
-## Configuration
-- Database connection: `components/connect.php`
-- Admin credentials: handled in `admin/` files (change as needed)
+2. Import the database:
+- Open phpMyAdmin (or MySQL client)
+- Import the provided `database.sql` (or the SQL file in `/db`)
 
-## Troubleshooting
-- If pages are blank, enable PHP error display in `php.ini` or add `ini_set('display_errors',1);` for debugging.
-- Ensure file permissions allow the webserver to read static assets.
+3. Configure the application:
+- Update database credentials in `config.php` (or the appropriate config file)
 
+4. Run locally:
+- Place the project in your web server folder (e.g., `htdocs` for XAMPP)
+- Start Apache and MySQL
+- Visit `http://localhost/<project-folder>` in your browser
 
+## Improvements & Roadmap
 
-## Contact
-- Questions or help: open an issue in this repository.
+- Payment gateway integration
+- Email notifications for bookings and confirmations
+- Migrate frontend to a modern framework (React / Vue / Angular)
+- Add analytics dashboard for bookings and revenue
+- Use ML for client segmentation and booking predictions
+
+## Contributing
+
+Contributions are welcome. Please open issues or pull requests for bug fixes and enhancements.
+
+## License
+
+Specify a license (e.g., MIT) in `LICENSE` if you want this project to be open source.
+
+## Author
+
+Manal Wassila — Computer Science Student | AI & Web Development Enthusiast
+
+---
+
+If you'd like, I can also add a `screenshots/` folder and sample images, or create a `LICENSE` file for you.
 
 
