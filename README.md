@@ -41,6 +41,4 @@ Then open `http://localhost:8000` in your browser.
 ## Contact
 - Questions or help: open an issue in this repository.
 
-## License
-Choose and add a license file if you want this repo publicly licensed.
 
