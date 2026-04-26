@@ -3,8 +3,6 @@
 
 Project: a small hotel booking website written in PHP with a MySQL backend.
 
-**Status:** Uploaded to this repository — ready for local setup.
-
 ## Features
 - Room listing and gallery
 - Booking form and backend handling
@@ -38,8 +36,7 @@ Then open `http://localhost:8000` in your browser.
 - If pages are blank, enable PHP error display in `php.ini` or add `ini_set('display_errors',1);` for debugging.
 - Ensure file permissions allow the webserver to read static assets.
 
-## Contributing
-- This project is a simple starter; feel free to open issues or create PRs.
+
 
 ## Contact
 - Questions or help: open an issue in this repository.
