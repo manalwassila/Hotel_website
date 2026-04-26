@@ -32,13 +32,7 @@ Admin
 - Separate authentication flows for admins and regular users
 - Clean, responsive UI with a functional design
 
-## Screenshots
 
-Add screenshots to the `screenshots/` folder and reference them here. Example:
-
-![Homepage](screenshots/homepage.png)
-![Booking page](screenshots/booking.png)
-![Admin dashboard](screenshots/admin.png)
 
 ## Installation
 
